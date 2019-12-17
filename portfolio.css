@@ -4,20 +4,27 @@ body {
 }
 
 .cover {
+    cursor: pointer;
+    text-shadow: #456399;
     text-align: center;
-    justify-content: center;
-    width: 100%;
     background-size: cover;
-    background-repeat: no-repeat;
     background-position: center;
  /* 
   */
 }
 
-.beaut {
+  /* Cover Css */
+.container {
+    background-image: url("collidingworlds.jpg");
+    height: 100vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center; 
+}
 
+.beaut {
     cursor: pointer;
-    font-size: 22px;
+    font-size: 22px;*
     border-radius: 4px;
     border: 1px solid #bbb;
     transition: all 0.3s linear;
@@ -42,10 +49,11 @@ body {
 }
 
 .box:hover {
-    -webkit-transform: rotate(3deg);
-    -moz-box-shadow: rotate(3deg);
-    -o-box-shadow: rotate(3deg);
-    transform: rotate(3deg);
+    -webkit-transform: rotate(5deg);
+    -moz-box-shadow: rotate(5deg);
+    -o-box-shadow: rotate(5deg);
+    transform: rotate(5deg);
+    box-shadow: rotate(5deg);
 }
 
 /* Nav Bar */
@@ -87,15 +95,6 @@ a {
 
 }
 
-/*Cover Css*/
-
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 80vh;
-}
-
 
 /*Grid/Card CSS */
 
@@ -115,6 +114,29 @@ a {
     margin: 20px;
 }
 
+/*Form CSS*/
+
+form { max-width:420px; margin:50px auto; }
+
+.form-css {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  border:2px solid rgb(88, 88, 185);
+  padding: 10px;
+  margin-bottom: 12px;
+  width:100%;
+  outline:0;
+}
+
+.form-css:focus { border:2px solid rgb(58, 200, 50); }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
 
 /*FOOTER CSS*/
 
